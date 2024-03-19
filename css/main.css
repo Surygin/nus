@@ -1,5 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 16px;
+  background-color: #F0F4F6;
+}
+body a {
+  text-decoration: none;
+}
+body ul {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Museo";
+  src: local("Museo"), url(../fonts/MuseoSansCyrl500.ttf);
+  font-family: "MuseoBold";
+  src: local("Museo"), url(../fonts/MuseoSansCyrl700.ttf);
 }
 
 .invisible__object {
@@ -11,11 +29,383 @@ body {
   clip: rect(0 0 0 0);
 }
 
+.btn-main {
+  padding: 5px 15px;
+  border-radius: 6px;
+  border: 1px solid #E87D00;
+}
+
 .header {
-  color: #666666;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  color: #F0F4F6;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Montserrat", sans-serif;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__menu {
+  font-weight: medium;
+}
+.header__menu ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.header__menu ul li a {
+  display: inline-block;
+  font-size: 15px;
+  padding: 5px 15px;
+  color: #F0F4F6;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero {
+  padding-top: 250px;
+  background: #fff url(../img/main/main-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.hero__title {
+  margin-bottom: 180px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  color: #F0F4F6;
+}
+
+.about {
+  margin-bottom: 32px;
+}
+.about__body {
+  margin-top: -5%;
+  padding: 50px;
+  border-radius: 12px;
+  background-color: #28969D;
+  color: #F0F4F6;
+}
+.about__title {
+  font-size: 36px;
+  font-weight: 500;
+}
+.about__text {
+  font-size: 22px;
+  font-family: "Museo", sans-serif;
+}
+
+.about2 {
+  margin-bottom: 32px;
+}
+.about2__body {
+  font-family: "Museo", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 50px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.about2__img {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+}
+.about2__img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.lesson__body {
+  padding: 20px;
+}
+.lesson__card {
+  margin-bottom: 32px;
+  padding: 40px 30px 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+}
+.lesson__card-title {
+  margin-bottom: 15px;
+  font-family: "MuseoBold", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.lesson__card-subtitle {
+  margin-bottom: 15px;
+  height: 48px;
+  font-family: "MuseoBold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.lesson__card-btn {
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: #E87D00;
+  border-radius: 6px;
+}
+.lesson__card-btn a {
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.lesson__card-date {
+  color: #A0A0A0;
+}
+
+.mission {
+  margin-bottom: 50px;
+}
+.mission__body {
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #E87D00;
+}
+.mission__text {
+  margin-left: -50px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  font-family: "Museo", sans-serif;
+  font-size: 22px;
+}
+
+.news__top {
+  height: 442px;
+  padding-top: 50px;
+  background-color: #28969D;
+  font-family: "Montserrat", sans-serif;
+}
+.news a {
+  color: #000;
+}
+.news h2 {
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #F0F4F6;
+  font-size: 36px;
+}
+.news__card {
+  margin-bottom: 50px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.news__card-img {
+  margin-bottom: 32px;
+}
+.news__card-img img {
+  height: 240px;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+  object-position: center;
+}
+.news__card-title {
+  height: 131px;
+  padding: 0 30px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.news__card-date {
+  padding: 30px;
+  font-size: 16px;
+  color: #A0A0A0;
+}
+.news__bottom {
+  margin-top: -316px;
+  padding-bottom: 50px;
+}
+.news .btn-main {
+  padding: 10px 55px;
+  font-size: 17px;
+  font-weight: medium;
+  transition: all 0.2s ease-in-out;
+  color: #E87D00;
+}
+
+.projects {
+  font-family: "Montserrat", sans-serif;
+}
+.projects a {
+  color: #000;
+}
+.projects__header {
+  position: relative;
+  height: 590px;
+  border-radius: 12px;
+  background: #fff url(../img/projects/bg.JPG) center no-repeat;
+  background-size: cover;
+}
+.projects__header-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  background-color: #28969D;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+}
+.projects__header-title h2 {
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  color: #F0F4F6;
+}
+.projects__list {
+  padding: 30px;
+}
+.projects__card {
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.projects__card-img {
+  margin-bottom: 32px;
+}
+.projects__card-img img {
+  height: 240px;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+  object-position: center;
+}
+.projects__card-title {
+  margin-bottom: 15px;
+  padding: 0 30px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.projects__card-subtitle {
+  padding: 0 30px;
+}
+.projects__card-date {
+  padding: 30px;
+  font-size: 16px;
+  color: #A0A0A0;
+}
+
+.docs {
+  font-family: "Montserrat", sans-serif;
+}
+.docs__wrap {
+  padding: 0 30px;
+}
+.docs__wrap h2 {
+  margin-bottom: 50px;
+  color: #1C5775;
+  font-size: 36px;
+}
+.docs__link {
+  margin-bottom: 15px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: rgba(40, 150, 157, 0.2);
+  transition: all 0.2s ease-in-out;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1C5775;
+}
+.docs__link img {
+  width: 23px;
+  aspect-ratio: 1/1;
 }
 
 .footer {
-  color: tomato;
+  color: #A0A0A0;
 }
-/*# sourceMappingURL=main.css.map */
+
+@media (hover: hover) {
+  a:hover {
+    transform: scale(1.1) !important;
+    color: #E87D00 !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .projects__card {
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header__menu ul li a {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+  .hero__title {
+    font-size: 40px;
+  }
+  .news__card-title {
+    font-size: 18px;
+  }
+  .docs__link {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header__logo {
+    margin-bottom: 30px;
+  }
+  .hero {
+    padding-top: 215px;
+  }
+  .hero__title {
+    font-size: 40px;
+  }
+  .lesson__card-subtitle {
+    height: auto;
+  }
+  .docs__link {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__menu ul {
+    display: block;
+  }
+  .header__menu ul li {
+    text-align: center;
+    border-top: 1px solid #F0F4F6;
+  }
+  .header__menu ul li:last-child {
+    border-top: none;
+  }
+  .header__menu ul li a {
+    padding: 15px;
+  }
+  .hero {
+    padding-top: 400px;
+  }
+  .hero__title {
+    margin-bottom: 40px;
+  }
+  .mission__body {
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #E87D00;
+  }
+  .mission__text {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  .docs__link {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .hero__title {
+    font-size: 24px;
+  }
+  .header__title {
+    font-size: 24px;
+  }
+  .about__text {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=main.css.map */

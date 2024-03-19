@@ -1,2 +1,29 @@
 .header
-  color: $footer__color
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  display: flex
+  padding: 20px 0
+  align-items: center
+  color: $header__color-text
+  background-color: rgba(0, 0, 0, 0.4)
+  font-family: "Montserrat", sans-serif
+  &__logo 
+    display: flex
+    align-items: center
+  &__menu
+    font-weight: medium
+    ul 
+      display: flex
+      align-items: center
+      list-style-type: none
+      li 
+        a
+          display: inline-block
+          font-size: 15px
+          padding: 5px 15px
+          color: $header__color-text
+          transition: all 0.2s ease-in-out
+
+        

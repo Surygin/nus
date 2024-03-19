@@ -1,9 +1,25 @@
-$font__color: #171717
-$font___color-sub: tomato
-$footer__color: #666666
+$font__color: #000000
+$link__color: #E87D00
+$footer__color-text: #A0A0A0
+$header__color-text: #F0F4F6
+$bg__color: #28969D
+
+*
+  box-sizing: border-box
 
 body 
   font-size: 16px
+  background-color: $header__color-text
+  a 
+    text-decoration: none
+  ul 
+    margin: 0
+    padding: 0
+  @font-face 
+    font-family: 'Museo'
+    src: local('Museo'), url(../fonts/MuseoSansCyrl500.ttf)
+    font-family: 'MuseoBold'
+    src: local('Museo'), url(../fonts/MuseoSansCyrl700.ttf)
 
 .invisible__object
   outline: none
@@ -12,3 +28,7 @@ body
   width: 1px
   overflow: hidden
   clip: rect(0 0 0 0)
+.btn-main
+  padding: 5px 15px
+  border-radius: 6px
+  border: 1px solid #E87D00
