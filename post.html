@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--Шрифты-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Фонд развития социального медиа пространства</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-2 d-flex justify-content-center align-items-center">
+          <div class="header__logo">
+            <img src="img/logo.png" alt="Логотип">
+          </div>
+          <!-- /.header__logo -->
+        </div>
+        <!-- /.col-12 col-md-4 col-lg-2 -->
+        <div class="col-12 offset-lg-3 col-lg-7">
+          <div class="header__menu d-flex justify-content-center justify-content-lg-end">
+            <ul>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Наши проекты</a></li>
+              <li><a href="#">Документы</a></li>
+              <li><a href="#">Партнерам</a></li>
+              <li><a href="#" class="btn btn-main" id="mailBtn">Написать нам</a></li>
+            </ul>
+          </div>
+          <!-- /.header__menu -->
+        </div>
+        <!-- /.col-12 offset-lg-4 col-lg-6 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+  <section class="newsPage">
+    <div class="newsPage__header" style="background: #fff url(/img/post-bg.png) center top no-repeat; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2 class="header__title post__title">
+                        Название поста
+                    </h2>
+                    <!-- /.header__title -->
+                    <div class="post__subtitle">
+                        Лекции и практически тренинги
+                    </div>
+                    <!-- /.post__subtitle -->
+                </div>
+                <!-- /.col-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.newsPage__header -->
+    <div class="container">
+        
+        <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-2">
+                    
+                        <div class="post__card">
+                            <img src="img/news/news1.png" alt="Заголовок новости">
+                            <p>
+                                Мы организуем практические тренинги, где участники могут на практике отработать навыки оказания первой помощи. Это позволяет не только получить теоретические знания, но и научиться применять их в жизни.<br><br>
+                                Лекции проводят практикующие специалисты, врачи выездных бригад экстренной медицинской помощи. Основная особенность наших лекций в том, что практические навыки отрабатываются каждым их участником. Сами лекции проходят в формате живого диалога, динамично и комфортно.<br><br>
+                                Мы работаем над тем, чтобы повысить осведомленность общества о первой помощи и инициировать обучение данной теме. Верим, что знания о первой помощи должны быть доступными и распространяться как можно шире, чтобы каждый человек имел возможность помочь другому в критической ситуации.
+                            </p>
+                        <div class="news__card-date">
+                            01 янв 2024
+                        </div>
+                        <!-- /.news__card-date -->
+                        </div>
+                        <!-- /.news__card -->
+                    
+                </div>
+                <!-- /.col-lg-4 col-md-6 col-12 -->
+
+        </div>
+        <!-- /.row -->
+        <div class="row mb-5">
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <span class="btn btn-main mx-3" id="regBtn">Регистрация</span>
+                <a href="#" class="btn btn-main">Назад</a>
+            </div>
+            <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.newsPage -->
+
+  <section class="modalReg" id="modalReg">
+    <div class="fromReg">
+      <form action="#" method="post">
+        <span class="modalReg__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+        </span>
+        <!-- /#modalReg__close -->
+        <h3 class="text-center">Тренинг
+          <span class="d-block">
+            “Первая помощь”
+          </span>
+          <!-- /.d-block -->
+        </h3>
+
+        <input type="text" placeholder="Имя*" required>
+        <input type="email" placeholder="Email*" required>
+        <input type="text" placeholder="Phone">
+        <p>*обязательные поля</p>
+        <button class="btn btn-main">Зарегистироваться</button>
+      </form>
+    </div>
+    <!-- /.fromReg -->
+  </section>
+  <!-- /.modalReg -->
+  <section class="modalReg" id="modalMail">
+    <div class="fromReg">
+      <form action="#" method="post">
+        <span class="modalReg__close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+        </span>
+        <!-- /#modalReg__close -->
+        <h3 class="text-center">Написать нам
+        </h3>
+
+        <input name="name" type="text" placeholder="Имя*" required>
+        <input name="email" type="email" placeholder="Email*" required>
+        <input name="phone" type="text" placeholder="Phone">
+        <textarea name="text" rows="5" placeholder="Ваше сообщение"></textarea>
+        <p>*обязательные поля</p>
+        <button class="btn btn-main">Написать</button>
+      </form>
+    </div>
+    <!-- /.fromReg -->
+  </section>
+  <!-- /.modalReg -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer__top d-flex justify-content-between align-items-center">
+            <div class="footer__top-logo">
+              <a href="#"><img src="img/logo.png" alt="Логотип"></a>
+            </div>
+            <!-- /.footer__top-logo -->
+            <div class="footer__top-social">
+              <a href="#"><img src="img/VK.png" alt=""></a>
+            </div>
+            <!-- /.footer__top-social -->
+          </div>
+          <!-- /.footer__top -->
+        </div>
+        <!-- /.col-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="footer__phone">
+            <a href="tel:+7(977)-681-65-46">+7(977)-681-65-46</a>
+          </div>
+          <!-- /.footer__phone -->
+          <div class="footer__mail">
+            <a href="mailto:nusfond@yandex.ru">nusfond@yandex.ru</a>
+          </div>
+          <!-- /.footer__mail -->
+        </div>
+        <!-- /.col-12 col-lg-4 -->
+        <div class="col-12 col-lg-4 offset-lg-4">
+          <div class="footer__form">
+            <p>Подпишитесь на нашу рассылку, чтобы быть в курсе всех последних новостей и событий.</p>
+            <form action="#" method="post">
+              <input type="email" placeholder="Введите ваш email">
+              <button class="btn btn-main">Подписаться</button>
+            </form>
+            <p>Согласен на обработку <a href="#" style="text-decoration: underline;">персональных данных</a></p>
+          </div>
+          <!-- /.footer__form -->
+        </div>
+        <!-- /.col-12 col-lg-4 offset-lg-4 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

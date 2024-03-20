@@ -33,6 +33,11 @@ body ul {
   padding: 5px 15px;
   border-radius: 6px;
   border: 1px solid #E87D00;
+  transition: all 0.2s ease-in-out;
+}
+
+.fade__in {
+  margin-left: 0 !important;
 }
 
 .header {
@@ -155,6 +160,9 @@ body ul {
   padding: 10px;
   width: 100%;
   transition: all 0.2s ease-in-out;
+}
+.lesson__card-btn a:hover {
+  color: #fff !important;
 }
 .lesson__card-date {
   color: #A0A0A0;
@@ -318,14 +326,153 @@ body ul {
   aspect-ratio: 1/1;
 }
 
+.modalReg {
+  position: fixed;
+  margin-left: -120vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+.modalReg h3 {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+.modalReg form {
+  position: relative;
+  max-width: 600px;
+  margin-top: 5vh;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 4px 4px 33px 6px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 33px 6px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 33px 6px rgba(34, 60, 80, 0.2);
+  text-align: center;
+}
+.modalReg form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #28969D;
+  border-radius: 6px;
+}
+.modalReg form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #28969D;
+  border-radius: 6px;
+}
+.modalReg form button {
+  background-color: #E87D00;
+  color: #fff;
+}
+
+.modalReg__close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.newsPage__header {
+  height: 480px;
+  padding-top: 150px;
+  margin-bottom: 30px;
+  background-color: #28969D;
+}
+.newsPage__all {
+  height: 250px;
+}
+.newsPage img {
+  width: 100%;
+}
+.newsPage h2 {
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  color: #1C5775;
+}
+.newsPage a {
+  color: #000;
+}
+
+.post__title {
+  font-family: "Mueno", sans-serif;
+  font-size: 40px !important;
+  color: #fff !important;
+}
+.post__subtitle {
+  color: #fff;
+}
+.post__card img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
 .footer {
+  padding: 70px 0;
   color: #A0A0A0;
+  background-color: #0E3239;
+}
+.footer a {
+  color: #A0A0A0;
+}
+.footer__top {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #28969D;
+}
+.footer__phone {
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.footer__mail {
+  font-size: 24px;
+}
+.footer__form form {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #28969D;
+}
+.footer__form form input {
+  background-color: transparent;
+  border: none;
+}
+.footer__form form input:focus {
+  color: #28969D;
+  outline: none;
+}
+.footer__form form button {
+  background-color: #E87D00;
 }
 
 @media (hover: hover) {
   a:hover {
     transform: scale(1.1) !important;
     color: #E87D00 !important;
+  }
+  #modalReg__close:hover {
+    transform: scale(1.1);
+  }
+  .btn-main:hover {
+    transform: scale(1.1);
   }
 }
 @media screen and (min-width: 992px) {
@@ -396,6 +543,12 @@ body ul {
   }
   .docs__link {
     font-size: 16px;
+  }
+  .newsPage__header {
+    padding-top: 385px;
+  }
+  .newsPage__all {
+    height: 450px;
   }
 }
 @media screen and (max-width: 575px) {
