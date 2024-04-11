@@ -150,6 +150,7 @@ body ul {
   font-size: 22px;
 }
 .lesson__card-date {
+  margin-bottom: 15px;
   font-size: 22px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.3);
@@ -259,7 +260,7 @@ body ul {
   position: relative;
   height: 590px;
   border-radius: 12px;
-  background: #fff url(../img/projects/bg.JPG) center no-repeat;
+  background: #fff url(../img/projects/bg.jpg) center no-repeat;
   background-size: cover;
 }
 .projects__header-title {
