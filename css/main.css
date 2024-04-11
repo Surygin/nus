@@ -80,7 +80,7 @@ body ul {
 .hero__title {
   margin-bottom: 180px;
   font-family: "Montserrat", sans-serif;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: bold;
   color: #F0F4F6;
 }
@@ -100,7 +100,7 @@ body ul {
   font-weight: 500;
 }
 .about__text {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Museo", sans-serif;
 }
 
@@ -136,15 +136,26 @@ body ul {
   background-color: rgb(255, 255, 255);
   border-radius: 12px;
 }
+.lesson__card-inverse {
+  background-color: #327A8A;
+  color: #fff;
+}
+.lesson__card-inverse .lesson__card-date {
+  color: rgba(255, 255, 255, 0.55);
+}
 .lesson__card-title {
   margin-bottom: 15px;
   font-family: "MuseoBold", sans-serif;
   font-weight: 700;
   font-size: 22px;
 }
+.lesson__card-date {
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.3);
+}
 .lesson__card-subtitle {
   margin-bottom: 15px;
-  height: 48px;
   font-family: "MuseoBold", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -182,7 +193,7 @@ body ul {
   background-color: #fff;
   border-radius: 12px;
   font-family: "Museo", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .news__top {
@@ -218,7 +229,7 @@ body ul {
 .news__card-title {
   height: 131px;
   padding: 0 30px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
 }
 .news__card-date {
@@ -288,7 +299,7 @@ body ul {
 .projects__card-title {
   margin-bottom: 15px;
   padding: 0 30px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
 }
 .projects__card-subtitle {
@@ -317,7 +328,7 @@ body ul {
   border-radius: 12px;
   background-color: rgba(40, 150, 157, 0.2);
   transition: all 0.2s ease-in-out;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   color: #1C5775;
 }
