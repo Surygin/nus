@@ -98,10 +98,12 @@ body ul {
 .about__title {
   font-size: 36px;
   font-weight: 500;
+  color: #1C5775;
 }
 .about__text {
   font-size: 20px;
   font-family: "Museo", sans-serif;
+  margin-bottom: 0;
 }
 
 .about2 {
@@ -129,6 +131,9 @@ body ul {
 
 .lesson__body {
   padding: 20px;
+}
+.lesson__title {
+  color: #1C5775;
 }
 .lesson__card {
   margin-bottom: 32px;
